@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to GodFood
  
 Hack take out contract from online website 
@@ -48,3 +49,9 @@ rake db:pull
 Copyright (c) 2012 GodFood
 
 Free of charge !! Enjoying it
+=======
+hzufastfood
+===========
+
+惠州学院外卖汇总
+>>>>>>> github/master
