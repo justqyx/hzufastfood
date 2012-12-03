@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
-gem "thin"
-gem 'nokogiri'
+gem "nokogiri", "~> 1.5.5"
 gem 'slim-rails'
 gem 'will_paginate'
+gem 'mysql2'
+gem "thin"
+gem "whenever", "~> 0.8.0"
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -17,20 +20,22 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+	gem 'execjs'
+  gem 'therubyracer', :platforms => :ruby
+	gem 'less-rails'
   gem "twitter-bootstrap-rails"
   gem "compass-rails"
 
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development do
-  gem 'mysql2'
-end
+#group :development do
+#  gem 'mysql2'
+#end
 
-group :production do
-  gem 'pg'
-end
+#group :production do
+#  gem 'pg'
+#end
 
 gem 'jquery-rails'
 

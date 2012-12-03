@@ -1,5 +1,8 @@
 GodFood::Application.routes.draw do
   get "homes/index"
+  get "homes/pull_data"
+  get "homes/start_crons"
+  get "homes/stop_crons"
   root :to => 'homes#index'
 
   # The priority is based upon order of creation:
